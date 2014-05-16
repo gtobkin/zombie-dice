@@ -18,6 +18,12 @@ public class GameState {
 		Arrays.fill(scores, _uniformScore);
 	}
 	
+	public int players() { return players; }
+	public int currentPlayer() { return currentPlayer; }
+	public int[] scores() { return scores; }
+	
+	public void setCurrentPlayer(int _currentPlayer) { currentPlayer = _currentPlayer; }
+	
 	// variables
 	private int players, currentPlayer;
 	private int[] scores;
