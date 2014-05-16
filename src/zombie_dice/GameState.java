@@ -39,6 +39,14 @@ public class GameState {
 	
 	public void nextPlayer() { currentPlayer = ++currentPlayer % players; }
 	
+	public void print() {
+		System.out.println("----- PRINTING GAMESTATE -----");
+		System.out.println("PLAYERS:\t" + players);
+		System.out.println("CURRENT_PLAYER:\t" + currentPlayer);
+		System.out.println("SCORES:\t\t" + Arrays.toString(scores));
+		System.out.println("----- FINISHED PRINTING GAMESTATE -----");
+	}
+	
 	// ==================== VARIABLES ====================
 	
 	private int players, currentPlayer;
